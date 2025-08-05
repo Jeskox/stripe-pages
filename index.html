@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stripe Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+      background: #f9f9fb;
+      color: #1f2937;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    }
+    a {
+      color: #6366f1;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    code {
+      background: #eef2f7;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .small {
+      font-size: .9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Stripe Payment Demo</h1>
+    <p>These are the helper pages used in the checkout flow.</p>
+    <ul>
+      <li><a href="/success.html?session_id=EXAMPLE">Success page</a> — shown after a successful payment. Replace <code>EXAMPLE</code> with a real session ID in tests.</li>
+      <li><a href="/cancel.html">Cancel page</a> — shown if the user cancels the payment.</li>
+    </ul>
+    <p class="small">Use the following in your Stripe session config:</p>
+    <pre class="small">
+success_url: https://jesko-lovat.vercel.app/success.html?session_id={CHECKOUT_SESSION_ID}
+cancel_url: https://jesko-lovat.vercel.app/cancel.html
+    </pre>
+  </div>
+</body>
+</html>
