@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment Canceled</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif; padding: 2rem; max-width: 600px; margin: auto; }
+    .card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
+    .status { color: #d97706; font-weight: bold; }
+    a { color: #2563eb; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>⚠️ Payment Canceled</h1>
+    <p class="status">It looks like you didn’t complete the payment.</p>
+    <p>If you still want to pay, you can go back to the invoice or try again.</p>
+    <p><a href="#" onclick="history.back(); return false;">Go back to retry</a></p>
+    <p>If you need help, reply to the invoice email.</p>
+  </div>
+</body>
+</html>
